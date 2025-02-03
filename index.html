@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col items-center gap-2 m-2 mt-50 bg-blue-800">
+    <div class="h-[500px] bg-blue-500 overflow-scroll p-5 rounded-lg">
+        <div>
+            <input type="text" id="taskInput" placeholder="Ajouter une tâche" class="bg-blue-100 p-2 rounded-lg">
+            <button id="add" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-300">Add</button>
+            <input type="text" id="search" placeholder="Rechercher une tâche" class="bg-blue-100 p-2 rounded-lg"> 
+        </div>
+        <div id="taskList" class="w-full p-2"></div>
+    </div>
+</body>
+</html>
